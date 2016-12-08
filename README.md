@@ -43,3 +43,7 @@ Longitudinal polling
 * Be able to come back to the questionnaire later easily. Remember your state
   with cookies. Save your state by adding your email?
 * Extra security for private information - what's the best way of doing this?
+* Detailed privacy explanation for users
+* Explanation of how researchers can use the platform
+* Tell the user how long it's going to take to fill out the questions
+* Show the progress of the user
