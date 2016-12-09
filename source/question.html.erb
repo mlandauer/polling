@@ -8,8 +8,8 @@ title: Political Survey
   <p>Question <%= no %> of 75</p>
 
   <% form_tag "/question#{no+1}.html", method: 'get' do %>
-    <div class="form-group">
-      <label for="exampleInputEmail1"><%= data.questions[no-1] %></label>
+    <fieldset>
+      <legend><%= data.questions[no-1] %></legend>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
@@ -40,7 +40,7 @@ title: Political Survey
           Agree strongly
         </label>
       </div>
-    </div>
+    </fieldset>
     <button type="submit" class="btn btn-default">Next</button>
   <% end %>
 </div>
