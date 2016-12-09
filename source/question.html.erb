@@ -12,31 +12,31 @@ title: Political Survey
       <legend><%= data.questions[no-1] %></legend>
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <%= radio_button_tag('agreement', value: '-2') %>
           Disagree strongly
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <%= radio_button_tag('agreement', value: '-1') %>
           Disagree
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <%= radio_button_tag('agreement', value: '0') %>
           No opinion
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          <%= radio_button_tag('agreement', value: '1') %>
           Agree
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          <%= radio_button_tag('agreement', value: '2') %>
           Agree strongly
         </label>
       </div>
