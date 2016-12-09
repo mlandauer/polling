@@ -47,3 +47,5 @@ Longitudinal polling
 * Explanation of how researchers can use the platform
 * Tell the user how long it's going to take to fill out the questions
 * Show the progress of the user
+* Back button should work on multi-step question
+* State of questions answered so far should be encoded in the url
