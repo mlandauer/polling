@@ -7,42 +7,13 @@ title: Political Survey
 
   <p>In this survey, you are asked to give your opinion of a set of statements characterising political views. Please rate each statement on the scale given, which runs from "strongly disagree" to "strongly agree".</p>
 
-  <p>Question 1 of 75</p>
+  <p>It takes 5 to 10 minutes to complete.<p>
 
-  <% form_tag '/question2.html', method: 'post' do %>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Aggressive foreign policies can put a stop to international terrorism.</label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          Disagree strongly
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Disagree
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          No opinion
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          Agree
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          Agree strongly
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-default">Next</button>
-  <% end %>
+  <p>
+    <% form_tag '/question1.html', method: 'get' do %>
+      <button type="submit" class="btn btn-default">Get started</button>
+    <% end %>
+  </p>
+
+  <p>Some stuff about privacy and being able to save your results part of the way through and come back to them</p>
 </div>
