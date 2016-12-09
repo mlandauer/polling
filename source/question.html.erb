@@ -9,7 +9,7 @@ title: Political Survey
 
   <% form_tag "/question#{no+1}.html", method: 'get' do %>
     <div class="form-group">
-      <label for="exampleInputEmail1"><%= text %></label>
+      <label for="exampleInputEmail1"><%= data.questions[no-1] %></label>
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">

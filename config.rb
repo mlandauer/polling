@@ -16,15 +16,9 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
-proxy '/question1.html', '/question.html', locals: {
-  no: 1,
-  text: 'Aggressive foreign policies can put a stop to international terrorism.'
-}
-
-proxy '/question2.html', '/question.html', locals: {
-  no: 2,
-  text: 'Everyone bears a moral responsibility for the actions of their government, even when they do not support them.'
-}
+(1..2).each do |no|
+  proxy "/question#{no}.html", '/question.html', locals: { no: no }
+end
 
 # General configuration
 
