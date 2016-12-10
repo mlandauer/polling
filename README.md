@@ -23,39 +23,28 @@ middleman deploy
 
 ## And a loose collection of some thoughts on this...
 
+### How it might work
 * Get a link to a poll, answer some questions, show something meaningful about
   how your results compare to other people
-* After completing poll optionally give your email address (always kept private),
-  only used to inform the user of other polls that they could answer
+* Potential follow up questions:
+  * Collect demographic information (for demographic weighting of poll results) - or do we want to ask these questions at the start? How important is usefulness of data versus putting people off at the start?
+  * After completing poll optionally give your email address (always kept private),
+    only used to inform the user of other polls that they could answer
+  * Opt in to follow-up qualitative research
 * Offer incentives? (Prize draws, social incentives, products, straight
   financial incentives)
-* Opt in to follow-up qualitative research
-* Collect demographic information (for demographic weighting of poll results)
 * Ability to do phone polling with the same tool - sample randomly from phone
   numbers in a geographic area - how do you do this with mobile phones rather
   than landlines?
 * Ability to crowd-source phone polling or perhaps some kind of intervention
   polling where people intervene in some other kind of situation where they
   might be able to randomly sample people
-* What other ways can we get more people to join the "panel" of poll people?
-* Allow different ways that answers can be grouped and organised to make them
-  useful to people
-* Allow order of questions to be randomised
-* Allow two forms of questions to be randomised (the question and its opposite
-  form to avoid biases in the framing of the questions)
-* What kind of numbers do we need in a questionnaire for results to be
-  statistically significant?
+* Randomise the order of questions
+* Randomise which form of the statement the user is given (the "normal" form or the "converse" form)
 * We should make the results of all polls available in an anonymous form linked
   up via a randomised person id so we could potentially do the equivalent of
   longitudinal studies with this data. How do we ensure that it's not possible
-  to de-identify the data?
-* If we make the results available for free what incentive would poll creators
-  have to financially support the platform?
-* Crowd-funding - for what, how and why?
-* Contact polling company to discover how to design questions, size of study,
-  number of questions, cost of research.
-* Look at the ABS geographic areas to understand how we can ask for where people
-  live without potentially making them identifiable.
+  to de-identify the data? What if we provide the covariance matrix or something like that? How much would we restrict the kind of analysis you could do?
 * Wouldn't it be great if people didn't need to remember a password? It's likely
   that the main way people would return to the platform as a "panel" participant
   is that they would get an email alert saying that there is a new poll to join.
@@ -74,8 +63,20 @@ middleman deploy
 * State of questions answered so far should be encoded in the url
 * Give the user some option if they don't understand the question - maybe an option to say "I don't understand the question" or "This question isn't clear" or perhaps some link to some more explanation of what the question means or what the words in the question means.
 * Show the user the answers they've given and allow them to change them at the end
-* Randomise the order of questions
-* Randomise which form of the statement the user is given (the "normal" form or the "converse" form)
 * It should be possible to link to the page showing your results (at a high level) without giving away the details of how you answered each question
 * Use cookies, IP address to help identify whether people are trying to fill out the form multiple times
 * Perhaps have a question "have you ever filled this out before?" towards the end just to add that little bit of extra honesty check. Of course if people really want to deceive they can but this little extra thing is likely to dissuade the casual person filling it out more than once. Or maybe they just want to see the results again and lost the details so they do it again but we don't want to use their results.
+
+### Some questions
+* What other ways can we get more people to join the "panel" of poll people?
+* What kind of numbers do we need in a questionnaire for results to be
+  statistically significant?
+* If we make the results available for free what incentive would poll creators
+  have to financially support the platform?
+* Crowd-funding - for what, how and why?
+
+### Some other things that will need to get done
+* Contact polling company to discover how to design questions, size of study,
+  number of questions, cost of research.
+* Look at the ABS geographic areas to understand how we can ask for where people
+  live without potentially making them identifiable.
