@@ -1,6 +1,6 @@
 # Longitudinal polling
 
-Just a static prototype to work through some ideas
+Just a static prototype to work through some ideas - **it doesn't actually work or do what it says it does**.
 
 ## Development
 
