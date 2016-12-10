@@ -72,3 +72,4 @@ middleman deploy
 * Show the progress of the user
 * Back button should work on multi-step question
 * State of questions answered so far should be encoded in the url
+* Give the user some option if they don't understand the question - maybe an option to say "I don't understand the question" or "This question isn't clear" or perhaps some link to some more explanation of what the question means or what the words in the question means.
