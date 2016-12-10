@@ -4,7 +4,7 @@ title: Political Survey 2017
 
 <div class="container">
   <h1><%= current_page.data.title %></h1>
-  <p><%= no %> of 75</p>
+  <p><%= no %> of <%= total %></p>
 
   <% form_tag "question#{no+1}.html", method: 'get' do %>
     <fieldset>

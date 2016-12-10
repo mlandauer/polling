@@ -17,7 +17,10 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 (1..5).each do |no|
-  proxy "/polls/1/question#{no}.html", '/question.html', locals: { no: no }, ignore: true
+  proxy "/polls/1/question#{no}.html",
+        '/question.html',
+        locals: { no: no, total: 5 },
+        ignore: true
 end
 
 # General configuration
