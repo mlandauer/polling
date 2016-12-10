@@ -6,7 +6,7 @@ title: Political Survey 2017
   <h2><%= current_page.data.title %></h2>
   <p><%= no %> of <%= total %></p>
 
-  <% form_tag "question#{no+1}.html", method: 'get' do %>
+  <% form_tag "#{no+1}.html", method: 'get' do %>
     <fieldset>
       <legend><%= data.questions[no-1] %></legend>
       <div class="radio">
