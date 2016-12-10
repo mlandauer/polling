@@ -45,6 +45,11 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  # If the repository is called polling and pushed to github to use github pages
+  # then we need this prefix. If you've used a different name you'll need
+  # to change this
+  set :http_prefix, '/polling'
 end
 
 activate :deploy do |deploy|
