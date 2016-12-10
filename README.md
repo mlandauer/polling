@@ -77,3 +77,5 @@ middleman deploy
 * Randomise the order of questions
 * Randomise which form of the statement the user is given (the "normal" form or the "converse" form)
 * It should be possible to link to the page showing your results (at a high level) without giving away the details of how you answered each question
+* Use cookies, IP address to help identify whether people are trying to fill out the form multiple times
+* Perhaps have a question "have you ever filled this out before?" towards the end just to add that little bit of extra honesty check. Of course if people really want to deceive they can but this little extra thing is likely to dissuade the casual person filling it out more than once. Or maybe they just want to see the results again and lost the details so they do it again but we don't want to use their results.
