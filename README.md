@@ -76,3 +76,4 @@ middleman deploy
 * Show the user the answers they've given and allow them to change them at the end
 * Randomise the order of questions
 * Randomise which form of the statement the user is given (the "normal" form or the "converse" form)
+* It should be possible to link to the page showing your results (at a high level) without giving away the details of how you answered each question
