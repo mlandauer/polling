@@ -1,4 +1,27 @@
-Longitudinal polling
+# Longitudinal polling
+
+Just a static prototype to work through some ideas
+
+## Development
+
+You'll need Ruby 2.3.1. Then after cloning the code,
+
+```
+cd polling
+bundle
+middleman
+```
+
+Then point your web browser at http://localhost:4567/
+
+## Deploying
+
+```
+middleman build
+middleman deploy
+```
+
+## And a loose collection of some thoughts on this...
 
 * Get a link to a poll, answer some questions, show something meaningful about
   how your results compare to other people
