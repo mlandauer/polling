@@ -17,9 +17,10 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 (1..5).each do |no|
+  next_url = no == 5 ? '/polls/1/intro_demographic.html' : "#{no+1}.html"
   proxy "/polls/1/questions/#{no}.html",
         '/question.html',
-        locals: { no: no, total: 5 },
+        locals: { no: no, total: 5, next_url: next_url },
         ignore: true
 end
 
@@ -27,7 +28,7 @@ end
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  activate :livereload, host: '192.168.1.105'
 end
 
 ###
