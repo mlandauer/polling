@@ -102,3 +102,4 @@ middleman deploy
 * [List of AMSRS members](http://www.amsrs.com.au/documents/item/244) and this list [converted to a spreadsheet](https://docs.google.com/spreadsheets/d/1fseT6F8Tpszo0BJP932GWQEhtFA6SsREAoTuAf5EJjI/edit?usp=sharing)
 * [Vote Compass methodology](http://voxpoplabs.com/votecompass/methodology.pdf)
 * [TableBuilder at the Australian Bureau of Statistics](https://www.censusdata.abs.gov.au/webapi/jsf/login.xhtml)
+* [Social Research Centre: Life in Australia panel](http://www.srcentre.com.au/our-research/panel)
