@@ -66,6 +66,18 @@ middleman deploy
 * It should be possible to link to the page showing your results (at a high level) without giving away the details of how you answered each question
 * Use cookies, IP address to help identify whether people are trying to fill out the form multiple times
 * Perhaps have a question "have you ever filled this out before?" towards the end just to add that little bit of extra honesty check. Of course if people really want to deceive they can but this little extra thing is likely to dissuade the casual person filling it out more than once. Or maybe they just want to see the results again and lost the details so they do it again but we don't want to use their results.
+* Mail the results to yourself
+* Possible demographic questions:
+  * What year were you born?
+  * Sex (not just binary - reflect the ABS data?)
+  * Which of the following news sources do you read most often?
+  * How did you vote in the last federal election?
+  * Education?
+  * Income?
+  * Language spoken at home? - useful for dealing with inherent bias of the poll being in the English language
+  * Access to internet? - It's an online poll. Let's see how this biases things
+  * Where do you live? Postcode? Suburb name? (Small enough to be useful - big enough to keep things private)
+
 
 ### Some questions
 * What other ways can we get more people to join the "panel" of poll people?
@@ -74,9 +86,19 @@ middleman deploy
 * If we make the results available for free what incentive would poll creators
   have to financially support the platform?
 * Crowd-funding - for what, how and why?
+* Should we only include people who are of voting age?
 
 ### Some other things that will need to get done
 * Contact polling company to discover how to design questions, size of study,
   number of questions, cost of research.
 * Look at the ABS geographic areas to understand how we can ask for where people
   live without potentially making them identifiable.
+
+### Some potentially useful references
+* [Data Analysis Australia: Sampling and Weighting – A Better Practice Guide for Practitioners](http://www.daa.com.au/analytical-ideas/sampling-and-weighting/)
+* [Data Analysis Australia: Political Polls](http://www.daa.com.au/analytical-ideas/political-polls/)
+* [YouGov Australia](https://au.yougov.com/)
+* [Australian Market & Social Research Society (AMSRS)](http://www.amsrs.com.au/)
+* [List of AMSRS members](http://www.amsrs.com.au/documents/item/244) and this list [converted to a spreadsheet](https://docs.google.com/spreadsheets/d/1fseT6F8Tpszo0BJP932GWQEhtFA6SsREAoTuAf5EJjI/edit?usp=sharing)
+* [Vote Compass methodology](http://voxpoplabs.com/votecompass/methodology.pdf)
+* [TableBuilder at the Australian Bureau of Statistics](https://www.censusdata.abs.gov.au/webapi/jsf/login.xhtml)
