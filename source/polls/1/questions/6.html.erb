@@ -1,0 +1,16 @@
+---
+title: Political Survey 2017
+---
+
+<div class="container">
+  <h2><%= current_page.data.title %></h2>
+  <p>1 of 5</p>
+
+  <% form_tag '7.html', method: 'get' do %>
+    <div class="form-group">
+      <label for="input-year-born">Which year were you born?</label>
+      <input type="number" class="form-control" id="input-year-born" placeholder="e.g. 1971">
+    </div>
+    <button type="submit" class="btn btn-default">Next</button>
+  <% end %>
+</div>
