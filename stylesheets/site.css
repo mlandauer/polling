@@ -9,16 +9,6 @@ body {
 .navbar-brand {
   font-size: 19px; }
 
-/*
-.radio label {
-  padding-left: 40px;
-  margin-right: 40px;
-}
-
-.radio input[type="radio"] {
-  margin-right: 20px;
-}
-*/
 .radio input[type="radio"] {
   margin-left: -30px; }
 
@@ -28,3 +18,13 @@ body {
 legend {
   font-weight: bold;
   font-size: 24px; }
+
+.form-control {
+  font-size: 19px;
+  height: 39px; }
+
+.dropdown-menu {
+  font-size: 19px; }
+
+.dropdown-menu > li > a {
+  padding-left: 13px; }
