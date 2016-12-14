@@ -1,0 +1,75 @@
+---
+title: Political Survey 2017
+---
+
+<div class="container">
+  <h2><%= current_page.data.title %></h2>
+  <p>2 of 5</p>
+
+  <% form_tag '8.html', method: 'get' do %>
+    <fieldset>
+      <legend>Which State/Territory do you live in?</legend>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'NSW') %>
+          New South Wales
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'VIC') %>
+          Victoria
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'QLD') %>
+          Queensland
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'SA') %>
+          South Australia
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'WA') %>
+          Western Australia
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'TAS') %>
+          Tasmania
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'NT') %>
+          Northern Territory
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'ACT') %>
+          Australian Capital Territory
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'other') %>
+          Other Australian Territory (Christmas Island / Directions Island / Home Island / Jervis Bay / West Keeling Island)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <%= radio_button_tag('state', value: 'not') %>
+          Do not live in Australia
+        </label>
+      </div>
+    </fieldset>
+    <button type="submit" class="btn btn-default">Next</button>
+  <% end %>
+</div>
