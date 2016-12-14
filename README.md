@@ -77,7 +77,7 @@ middleman deploy
   * Language spoken at home? - useful for dealing with inherent bias of the poll being in the English language
   * Access to internet? - It's an online poll. Let's see how this biases things
   * Where do you live? Postcode? Suburb name? (Small enough to be useful - big enough to keep things private)
-
+* Suburb names are not completely unique (even within a state). So, we will have to account for that. (e.g. Penrose NSW, Riverview NSW, Rosewood NSW, Silverwater NSW)
 
 ### Some questions
 * What other ways can we get more people to join the "panel" of poll people?
