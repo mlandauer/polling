@@ -87,6 +87,9 @@ middleman deploy
   have to financially support the platform?
 * Crowd-funding - for what, how and why?
 * Should we only include people who are of voting age?
+* What about Australians who live overseas? They'll get completely missed by
+  randomised polling (by phone number for example). How many of them vote or
+  are otherwise involved in the political process?
 
 ### Some other things that will need to get done
 * Contact polling company to discover how to design questions, size of study,
