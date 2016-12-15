@@ -1,0 +1,27 @@
+---
+title: Political Survey 2017
+---
+
+<div class="container">
+  <h2><%= current_page.data.title %></h2>
+
+  <h3>Results</h3>
+
+  <p>
+    This is where we'll show you some results, including showing you how
+    your political opinion compares to the Australian population.
+  </p>
+
+  <p>
+    If you want to see how your results compare to others like you then
+    <%= link_to 'tell us a bit about yourself', "/polls/1/questions/6.html" %>.
+  </p>
+
+  <% form_tag 'email.html', method: 'get' do %>
+    <div class="form-group">
+      <label for="email">Email me the results</label>
+      <input type="email" class="form-control" id="email" placeholder="myemail@foo.com">
+    </div>
+    <button type="submit" class="btn btn-default">Send</button>
+  <% end %>
+</div>
