@@ -24,15 +24,12 @@ page '/*.txt', layout: false
         ignore: true
 end
 
-proxy '/polls/1/results/demographics/no.html',
-      '/polls/1/results.html',
-      locals: { demographics: false },
-      ignore: true
-
-proxy '/polls/1/results/demographics/yes.html',
-      '/polls/1/results.html',
-      locals: { demographics: true },
-      ignore: true
+[false, true].each do |demographics|
+  proxy "/polls/1/results/demographics/#{demographics}.html",
+        '/polls/1/results.html',
+        locals: { demographics: demographics },
+        ignore: true
+end
 
 # General configuration
 
