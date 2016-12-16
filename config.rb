@@ -24,6 +24,16 @@ page '/*.txt', layout: false
         ignore: true
 end
 
+proxy '/polls/1/results/demographics/no.html',
+      '/polls/1/results.html',
+      locals: { demographics: false },
+      ignore: true
+
+proxy '/polls/1/results/demographics/yes.html',
+      '/polls/1/results.html',
+      locals: { demographics: true },
+      ignore: true
+
 # General configuration
 
 # Reload the browser automatically whenever files change
