@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="polls polls_1 polls_1_questions polls_1_questions_8">
+  <body class="polls polls_1 polls_1_results polls_1_results_demographics polls_1_results_demographics_true polls_1_results_demographics_true_enough polls_1_results_demographics_true_enough_true">
     <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -30,15 +30,39 @@
 
     <div class="container">
   <h2>Political Survey 2017</h2>
-  <p>3 of 3</p>
 
-<form action="/polling/polls/1/results/demographics/true.html" accept-charset="UTF-8" method="get">    <div class="form-group">
-      <label for="suburb">Which suburb in New South Wales do you live in?</label>
-      <input type="text" class="form-control" id="suburb" placeholder="e.g. Bondi" data-provide="typeahead">
+  <h3>Results</h3>
+
+    <p>
+      This is where we'll show you some results, including showing you how
+      your political opinion compares to the Australian population as well as
+      people who are of a similar age or who live in a similar area.
+    </p>
+
+<form action="email.html" accept-charset="UTF-8" method="get">    <div class="form-group">
+      <label for="email">
+        Email me the results
+      </label>
+      <input type="email" class="form-control" id="email" placeholder="myemail@foo.com">
     </div>
-    <button type="submit" class="btn btn-default">Next</button>
-    <p id="why" class="help-block">Why do you want to know which suburb I live in?</p>
-</form></div>
+    <button type="submit" class="btn btn-default">Send</button>
+</form>
+  <p>
+    Alternatively bookmark this page and come back to it later.
+  </p>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">
+      Demographics:
+      <a href="/polling/polls/1/results/demographics/true/enough/false.html">true</a>,
+      Enough:
+      <a href="/polling/polls/1/results/demographics/true/enough/false.html">true</a>
+    </p>
+  </div>
+</footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

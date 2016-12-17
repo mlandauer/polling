@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="polls polls_1 polls_1_questions polls_1_questions_3">
+  <body class="polls polls_1 polls_1_intro_demographic polls_1_intro_demographic_enough polls_1_intro_demographic_enough_true">
     <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -30,43 +30,36 @@
 
     <div class="container">
   <h2>Political Survey 2017</h2>
-  <p>3 of 5</p>
 
-<form action="/polling/polls/1/questions/4.html" accept-charset="UTF-8" method="get">    <fieldset>
-      <legend>Overall, young people benefit from compulsory military service.</legend>
-      <div class="radio">
-        <label>
-          <input type="radio" name="agreement" value="-2" />
-          Disagree strongly
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="agreement" value="-1" />
-          Disagree
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="agreement" value="0" />
-          No opinion
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="agreement" value="1" />
-          Agree
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="agreement" value="2" />
-          Agree strongly
-        </label>
-      </div>
-    </fieldset>
-    <button type="submit" class="btn btn-default">Next</button>
-</form></div>
+  <p>
+    Next, we're going to ask you a few questions about you.
+      You will then be able to see how your political opinions relate to people
+      your age, where you live, etc. Also, it
+    will mean that we will be able to add your results
+    to the pool of results for the Australian population
+    (We demographically weight the results).
+  </p>
+
+  <p><a href="/polling/polls/1/questions/6/enough/true.html" class="btn btn-default">Answer questions about you</a></p>
+
+    <p>
+      <a href="/polls/1/results/demographics/false.html">Skip these questions. Take me straight to my results.</a>
+    </p>
+
+  <p>
+    Privacy: Note that your answers to these questions is never directly shared
+    with others.
+  </p>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">
+      Enough:
+      <a href="/polling/polls/1/intro_demographic/enough/false.html">true</a>
+    </p>
+  </div>
+</footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

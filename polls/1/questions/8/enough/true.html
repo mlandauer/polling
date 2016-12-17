@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="polls polls_1 polls_1_index">
+  <body class="polls polls_1 polls_1_questions polls_1_questions_8 polls_1_questions_8_enough polls_1_questions_8_enough_true">
     <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -30,15 +30,15 @@
 
     <div class="container">
   <h2>Political Survey 2017</h2>
+  <p>3 of 3</p>
 
-  <p>In this survey, you are asked to give your opinion of a set of statements characterising political views. Please rate each statement on the scale given, which runs from "strongly disagree" to "strongly agree".</p>
-
-  <p>It takes 5 to 10 minutes to complete.<p>
-
-  <p><a href="/polling/polls/1/questions/1.html" class="btn btn-default">Get started</a></p>
-
-  <p>Some stuff about privacy and being able to save your results part of the way through and come back to them</p>
-</div>
+<form action="/polling/polls/1/results/demographics/true/enough/true.html" accept-charset="UTF-8" method="get">    <div class="form-group">
+      <label for="suburb">Which suburb in New South Wales do you live in?</label>
+      <input type="text" class="form-control" id="suburb" placeholder="e.g. Bondi" data-provide="typeahead">
+    </div>
+    <button type="submit" class="btn btn-default">Next</button>
+    <p id="why" class="help-block">Why do you want to know which suburb I live in?</p>
+</form></div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

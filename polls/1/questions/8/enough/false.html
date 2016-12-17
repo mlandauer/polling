@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Polling</title>
+    <title>Political Survey 2017</title>
 
     <!-- Bootstrap -->
     <link href="/polling/stylesheets/bootstrap.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="index">
+  <body class="polls polls_1 polls_1_questions polls_1_questions_8 polls_1_questions_8_enough polls_1_questions_8_enough_false">
     <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -29,12 +29,16 @@
 </nav>
 
     <div class="container">
-  <h2>Current Polls</h2>
+  <h2>Political Survey 2017</h2>
+  <p>3 of 3</p>
 
-  <ul>
-    <li><a href="/polling/polls/1/enough/false.html">Political Survey 2017</a></li>
-  </ul>
-</div>
+<form action="/polling/polls/1/results/demographics/true/enough/false.html" accept-charset="UTF-8" method="get">    <div class="form-group">
+      <label for="suburb">Which suburb in New South Wales do you live in?</label>
+      <input type="text" class="form-control" id="suburb" placeholder="e.g. Bondi" data-provide="typeahead">
+    </div>
+    <button type="submit" class="btn btn-default">Next</button>
+    <p id="why" class="help-block">Why do you want to know which suburb I live in?</p>
+</form></div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
