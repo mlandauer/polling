@@ -24,11 +24,13 @@ page '/*.txt', layout: false
 end
 
 (1..5).each do |no|
-  next_url = no == 5 ? '/polls/1/intro_demographic.html' : "#{no+1}.html"
-  proxy "/polls/1/questions/#{no}.html",
-        '/question.html',
-        locals: { no: no, total: 5, next_url: next_url },
-        ignore: true
+  [false, true].each do |enough|
+    next_url = no == 5 ? '/polls/1/intro_demographic.html' : "/polls/1/questions/#{no+1}/enough/#{enough}.html"
+    proxy "/polls/1/questions/#{no}/enough/#{enough}.html",
+          '/question.html',
+          locals: { no: no, total: 5, next_url: next_url },
+          ignore: true
+  end
 end
 
 [false, true].each do |demographics|
