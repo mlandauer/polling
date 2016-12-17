@@ -7,20 +7,36 @@ title: Political Survey 2017
 
   <p>
     Next, we're going to ask you a few questions about you.
-    You will then be able to see how your political opinions relate to people
-    your age, where you live, etc. Also, it will mean that we will be able to add your results
+    <% if enough %>
+      You will then be able to see how your political opinions relate to people
+      your age, where you live, etc. Also, it
+    <% else %>
+      It
+    <% end %>
+    will mean that we will be able to add your results
     to the pool of results for the Australian population
     (We demographically weight the results).
   </p>
 
   <p><%= link_to "Answer questions about you", "/polls/1/questions/6.html", class: "btn btn-default" %></p>
 
-  <p>
-    <%= link_to "Skip these questions. Take me straight to my results.", "/polls/1/results/demographics/false.html" %>
-  </p>
+  <% if enough %>
+    <p>
+      <%= link_to "Skip these questions. Take me straight to my results.", "/polls/1/results/demographics/false.html" %>
+    </p>
+  <% end %>
 
   <p>
     Privacy: Note that your answers to these questions is never directly shared
     with others.
   </p>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">
+      Enough:
+      <%= link_to enough, "#{!enough}.html" %>
+    </p>
+  </div>
+</footer>

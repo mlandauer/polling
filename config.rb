@@ -25,12 +25,19 @@ end
 
 (1..5).each do |no|
   [false, true].each do |enough|
-    next_url = no == 5 ? '/polls/1/intro_demographic.html' : "/polls/1/questions/#{no+1}/enough/#{enough}.html"
+    next_url = no == 5 ? "/polls/1/intro_demographic/enough/#{enough}.html" : "/polls/1/questions/#{no+1}/enough/#{enough}.html"
     proxy "/polls/1/questions/#{no}/enough/#{enough}.html",
           '/question.html',
           locals: { no: no, total: 5, next_url: next_url },
           ignore: true
   end
+end
+
+[false, true].each do |enough|
+  proxy "/polls/1/intro_demographic/enough/#{enough}.html",
+        '/polls/1/intro_demographic.html',
+        locals: { enough: enough },
+        ignore: true
 end
 
 [false, true].each do |demographics|
