@@ -6,7 +6,7 @@ title: Political Survey 2017
   <h2><%= current_page.data.title %></h2>
   <p>2 of 3</p>
 
-  <% form_tag '8.html', method: 'get' do %>
+  <% form_tag "/polls/1/questions/8/enough/#{enough}.html", method: 'get' do %>
     <fieldset>
       <legend>Which State/Territory do you live in?</legend>
       <div class="radio">

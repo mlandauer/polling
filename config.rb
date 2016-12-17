@@ -40,11 +40,22 @@ end
         ignore: true
 end
 
+[false, true].each do |enough|
+  (6..8).each do |no|
+    proxy "/polls/1/questions/#{no}/enough/#{enough}.html",
+          "/polls/1/questions/#{no}.html",
+          locals: { enough: enough },
+          ignore: true
+  end
+end
+
 [false, true].each do |demographics|
-  proxy "/polls/1/results/demographics/#{demographics}.html",
-        '/polls/1/results.html',
-        locals: { demographics: demographics },
-        ignore: true
+  [false, true].each do |enough|
+    proxy "/polls/1/results/demographics/#{demographics}/enough/#{enough}.html",
+          '/polls/1/results.html',
+          locals: { demographics: demographics, enough: enough },
+          ignore: true
+  end
 end
 
 # General configuration
