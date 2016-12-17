@@ -7,9 +7,28 @@ title: Political Survey 2017
 
   <p>In this survey, you are asked to give your opinion of a set of statements characterising political views. Please rate each statement on the scale given, which runs from "strongly disagree" to "strongly agree".</p>
 
+  <% if !enough %>
+  <p>
+    At present, we're only <em>collecting</em> data; we don't have enough to
+    produce an informative result at the end. But please
+    take the test anyway, and bookmark the "results" page
+    so that you can come back later and see where your
+    answers place you.
+  </p>
+  <% end %>
+
   <p>It takes 5 to 10 minutes to complete.<p>
 
   <p><%= link_to "Get started", "/polls/1/questions/1.html", class: "btn btn-default" %></p>
 
   <p>Some stuff about privacy and being able to save your results part of the way through and come back to them</p>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">
+      Enough:
+      <%= link_to enough, "#{!enough}.html" %>
+    </p>
+  </div>
+</footer>
