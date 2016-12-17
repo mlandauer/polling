@@ -1,3 +1,3 @@
-$.get('suburbs_nsw.json', function(data){
+$.get('/data/suburbs_nsw.json', function(data){
     $("#suburb").typeahead({ source:data });
 },'json');
