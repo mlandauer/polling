@@ -106,3 +106,4 @@ middleman deploy
 * [Vote Compass methodology](http://voxpoplabs.com/votecompass/methodology.pdf)
 * [TableBuilder at the Australian Bureau of Statistics](https://www.censusdata.abs.gov.au/webapi/jsf/login.xhtml)
 * [Social Research Centre: Life in Australia panel](http://www.srcentre.com.au/our-research/panel)
+* [Partisan Bias in Factual Beliefs about Politics](http://www.nber.org/papers/w19080)
