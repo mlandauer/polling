@@ -21,36 +21,28 @@ page '/*.txt', layout: false
         '/polls/1/index.html',
         locals: { enough: enough },
         ignore: true
-end
 
-(1..5).each do |no|
-  [false, true].each do |enough|
+  (1..5).each do |no|
     next_url = no == 5 ? "/polls/1/intro_demographic/enough/#{enough}.html" : "/polls/1/questions/#{no+1}/enough/#{enough}.html"
     proxy "/polls/1/questions/#{no}/enough/#{enough}.html",
           '/question.html',
           locals: { no: no, total: 5, next_url: next_url },
           ignore: true
   end
-end
 
-[false, true].each do |enough|
   proxy "/polls/1/intro_demographic/enough/#{enough}.html",
         '/polls/1/intro_demographic.html',
         locals: { enough: enough },
         ignore: true
-end
 
-[false, true].each do |enough|
   (6..8).each do |no|
     proxy "/polls/1/questions/#{no}/enough/#{enough}.html",
           "/polls/1/questions/#{no}.html",
           locals: { enough: enough },
           ignore: true
   end
-end
 
-[false, true].each do |demographics|
-  [false, true].each do |enough|
+  [false, true].each do |demographics|
     proxy "/polls/1/results/demographics/#{demographics}/enough/#{enough}.html",
           '/polls/1/results.html',
           locals: { demographics: demographics, enough: enough },
